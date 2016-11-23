@@ -1,0 +1,13 @@
+cc86facb944d3672d66d5f9ad1cba18d *DESCRIPTION
+a0546b85c9c454059b7807ec2a5bbae0 *NAMESPACE
+af34ec6a5e3517413c451256e3140a74 *R/facial_set.R
+d4587ee2843270f269fb979b895b30fb *build/vignette.rds
+e489dc86fa531c535ac86cff7cb57c7a *data/rochdale.rda
+d165d4fd547454493046549e6c6b79af *inst/doc/User_manual.ltx
+0f8e8bdbb0de20efa8f5e672ac07f559 *inst/doc/User_manual.pdf
+77c42a8dc01a0f70e0d0542ae4066813 *man/eMLEloglin.Rd
+e85f1d0f2d070d015b3e0a5e6c2a8bd9 *man/facial_set.Rd
+d76ba438c9a3025a5eabe749b8fad6f0 *man/rochdale.Rd
+d165d4fd547454493046549e6c6b79af *vignettes/User_manual.ltx
+f6f3b8403e4f3abb24978a5b79998ec0 *vignettes/mybib.bib
+9f78f63c0bc989814b157921280718c4 *vignettes/srcltx.sty
