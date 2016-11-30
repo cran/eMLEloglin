@@ -1,6 +1,6 @@
 \name{facial_set}
 \alias{facial_set}
-\Rdversion{1.0}
+\Rdversion{1.0.1}
 \title{Finds the facial set}
 \description{Identifies sampling zeros that contribute to the non-existence of the MLE. These problematic zero cells can be removed from the contingency table and the model can then be fit (as far as is possible) using the glm package.}
 \usage{facial_set (data, formula)}
@@ -18,7 +18,9 @@
 \item{face.dimension}{The dimension of the facial set. Equivalent to the number of log-linear parameters that can be estimated.} 
 \item{maxloglik}{The maximum of the log likelihood function up to a constant.} 
 }
-\references{Feinberg, S. E. and Rinaldo, A. (2012). Maximum likelihood estimation in log-linear models. Annals of Statistics.}
+\references{Feinberg, S. E. and Rinaldo, A. (2012). Maximum likelihood estimation in log-linear models. Annals of Statistics. 40: 996-1023
+
+Friedlander, M. (2016). Fitting log-linear models in sparse contingency tables using the eMLEloglin R package. Preprint. arXiv:1611.07505}
 \author{Matthew Friedlander} 
 \examples{
 data(rochdale)

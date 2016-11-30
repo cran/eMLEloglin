@@ -1,20 +1,22 @@
 \name{eMLEloglin}
-\Rdversion{1.0}
+\Rdversion{1.0.1}
 \title{Fitting log-linear models in sparse contingency tables.}
 \description{Log-linear modeling is a popular method for the analysis of contingency table data. When the table is sparse, the data can fall on the boundary of the convex support, and we say that "the MLE does not exist" in the sense that some parameters cannot be estimated. However, an extended MLE always exists, and a subset of the original parameters will be estimable. The 'eMLEloglin' package determines which sampling zeros contribute to the non-existence of the MLE. These problematic zero cells can be removed from the contingency table and the model can then be fit using the glm() function.}
 \details{
 \tabular{ll}{
 Package: \tab eMLEloglin\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2016-11-21\cr
+Version: \tab 1.0.1\cr
+Date: \tab 2016-11-23\cr
 License: \tab GPL-2\cr
 }
 The function facial_set identifies sampling zeros that contribute to the non-existence of the MLE.}
 \author{Author: Matthew Friedlander
 Maintainer: Matthew Friedlander <mattyf5@hotmail.com>
 }
-\references{Feinberg, S. E. and Rinaldo, A. (2012). Maximum likelihood estimation in log-linear models. Annals of Statistics, 40, 996-1023.}
+\references{Feinberg, S. E. and Rinaldo, A. (2012). Maximum likelihood estimation in log-linear models. Annals of Statistics, 40: 996-1023.
+
+Friedlander, M. (2016). Fitting log-linear models in sparse contingency tables using the eMLEloglin R package. Preprint. arXiv:1611.07505}
 \examples{
 data(rochdale)
 f <- facial_set (data = rochdale, 

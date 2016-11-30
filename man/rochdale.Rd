@@ -1,5 +1,5 @@
 \name{rochdale}
-\Rdversion{1.0}
+\Rdversion{1.0.1}
 \alias{rochdale}
 \docType{data}
 \title{The rochdale data}

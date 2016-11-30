@@ -1,10 +1,4 @@
-% Preview source code
-
-%% LyX 2.0.8.1 created this file.  For more info, see http://www.lyx.org/.
-%% Do not edit unless you really know what you are doing.
-
-%\VignetteIndexEntry{User_manual} 
-%\VignetteEngine{R.rsp::tex}
+%\VignetteIndexEntry{User manual} 
 
 \documentclass[12pt,english]{article}
 \usepackage[latin9]{inputenc}
@@ -60,9 +54,9 @@ Log-linear modeling is a popular method for the analysis of contingency
 table data. When the table is sparse, and the data falls on a proper
 face $F$ of the convex support, there are consequences on model inference
 and model selection. Knowledge of the cells determining $F$ is crucial
-to mitigating these effects. We introduce the R package (R Core Team
-2016) eMLEloglin for determining $F$ and passing that information
-on to the glm package to fit the model properly. 
+to mitigating these effects. We introduce the R package (\citet{R})
+eMLEloglin for determining $F$ and passing that information
+on to the glm() function to fit the model properly. 
 \end{abstract}
 
 \section{Introduction}
@@ -751,8 +745,109 @@ by \citet{Dobra1}. The model they selected is marked with
 there is a strong hint of $\mathrm{bdh}$ interaction. The dataset
 was also analyzed in \citet{Dobra2}.
 
-\bibliography{mybib}{}
-%\bibliographystyle{plainnat}
+\begin{thebibliography}{17}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Agresti(1990)]{Agresti}
+A.~Agresti.
+\newblock \emph{Categorical Data Analysis}.
+\newblock John Wiley \& Sons, Hoboken, NJ, 2 edition, 1990.
+
+\bibitem[Bishop et~al.(1975)Bishop, Feinberg, and Holland]{Bishop}
+Y.~M.~M. Bishop, S.~E. Feinberg, and P.~W. Holland.
+\newblock \emph{Discrete Multivariate Analysis}.
+\newblock MIT Press, Cambridge, MA, 1975.
+
+\bibitem[Christensen(1997)]{Christensen}
+R.~Christensen.
+\newblock \emph{Log-linear Models and Logistic Regression}.
+\newblock Springer Verlag, 1997.
+
+\bibitem[Dobra and Lenkoski(2011)]{Dobra2}
+A.~Dobra and A.~Lenkoski.
+\newblock Copula gaussian graphical models and their application to modeling
+  functional disability data.
+\newblock \emph{Annals of Applied Statistics}, 5:\penalty0 969--993, 2011.
+
+\bibitem[Dobra and Massam(2010)]{Dobra1}
+A.~Dobra and H.~Massam.
+\newblock The mode oriented stochastic search (moss) algorithm for log-linear
+  models with conjugate priors.
+\newblock \emph{Statistical Methodology}, 7:\penalty0 204--253, 2010.
+
+\bibitem[Eriksson et~al.(2006)Eriksson, Feinberg, Rinaldo, and
+  Sullivant]{Eriksson}
+N.~Eriksson, S.~E. Feinberg, A.~Rinaldo, and S.~Sullivant.
+\newblock Polyhedral conditions for the nonexistence of the mle for
+  hierarchical log-linear models.
+\newblock \emph{Journal of Symbolic Computations}, 41:\penalty0 222--233, 2006.
+
+\bibitem[Feinberg and Rinaldo(2007)]{Feinberg1}
+S.~E. Feinberg and A.~Rinaldo.
+\newblock Three centuries of categorical data analysis: Log-linear models and
+  maximum likelihood estimation.
+\newblock \emph{Journal of Statistical Planning and Inference}, 137:\penalty0
+  3430--3445, 2007.
+
+\bibitem[Feinberg and Rinaldo(2012)]{Feinberg2}
+S.~E. Feinberg and A.~Rinaldo.
+\newblock Maximum likelihood estimation in log-linear models.
+\newblock \emph{Annals of Statistics}, 40:\penalty0 996--1023, 2012.
+
+\bibitem[Geyer(2009)]{Geyer}
+C.~J. Geyer.
+\newblock Likelihood inference in exponential families and directions of
+  recession.
+\newblock \emph{Electronic Journal of Statistics}, 3:\penalty0 259--289, 2009.
+
+\bibitem[Haberman(1974)]{Haberman}
+S.~J. Haberman.
+\newblock \emph{The Anlaysis of Frequency Data}.
+\newblock University of Chicago Press, 1974.
+
+\bibitem[Hofmann(2003)]{Hofmann}
+H.~Hofmann.
+\newblock Constructing and reading mosaicplots.
+\newblock \emph{Computational Statistics and Data Analysis}, 43:\penalty0
+  565--580, 2003.
+
+\bibitem[Lauritzen(1996)]{Lauritzen}
+S.~F. Lauritzen.
+\newblock \emph{Graphical Models}.
+\newblock Oxford University Press, NY, 1996.
+
+\bibitem[{R~Core~Team}(2016)]{R}
+{R~Core~Team}.
+\newblock \emph{R: A Language and Environment for Statistical Computing}.
+\newblock R Foundation for Statistical Computing, Vienna, Austria, 2016.
+\newblock URL \url{http://www.R-project.org/}.
+
+\bibitem[Rockafellar(1970)]{Rockafellar}
+R.~T. Rockafellar.
+\newblock \emph{Convex Analysis}.
+\newblock Princeton University Press, Princeton, 1970.
+
+\bibitem[Schwarz(1978)]{Schwarz}
+G.~E. Schwarz.
+\newblock Estimating the dimension of a model.
+\newblock \emph{Annals of Statistics}, 6:\penalty0 461--464, 1978.
+
+\bibitem[Whittaker(1990)]{Whittaker}
+J.~Whittaker.
+\newblock \emph{Graphical Models in Applied Multivariate Statistics}.
+\newblock John Wiley \& Sons, Chichester, 1990.
+
+\bibitem[Ziegler(1995)]{Ziegler}
+M.~G. Ziegler.
+\newblock \emph{Lectures on Polytopes}.
+\newblock Springer-Verlag, NY, 1995.
+
+\end{thebibliography}
+\bibliographystyle{plainnat}
 \nocite{*}
 
 \end{document}
